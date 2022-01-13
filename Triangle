@@ -1,0 +1,14 @@
+/*
+Programmer: Brenden Krueger
+Date: 1-13-2022
+Program: Sandbox
+*/
+
+
+async function startProgram() {
+	await roll(90, 255, 1);
+	await delay(3);
+	await roll(315, 255, 1);
+	await delay(3);
+	await roll(180, 255, 1);
+}
