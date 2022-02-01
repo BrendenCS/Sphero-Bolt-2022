@@ -19,8 +19,18 @@ async function startProgram() {
 	await speak('music note number 1');
 	await roll(180,40,2)
 	await roll(-137,40,2)
-	await roll(120,33,2)
+	await roll(120,30,2)
 	setMainLed({ r:255, g:0, b:0 });
-	await roll(70,40,3);
+	await roll(50,37,2);
  	await speak('music note number 2');
+	await roll(140,40,2)
+	stopRoll();
+	setHeading(90)
+	
+	/*
+	await roll(125,45,1)
+	await roll(90,40,1)
+	setMainLed({ r:0, g:255, b:0 });
+	*/
+
 }
