@@ -24,18 +24,19 @@ async function startProgram() {
 	await roll(120,30,2)
 	setMainLed({ r:255, g:0, b:0 });
 	
-	await roll(50,37,2);
+	await roll(40,38,2);
  	await speak('music note number 2');
 	
 	await roll(140,40,2)
 	stopRoll();
-	await roll(90,40,1)
+	await roll(90,35,1)
 	setMainLed({ r:0, g:255, b:0 });
-	
-	/*
-	await roll(125,45,1)
-	await roll(90,40,1)
-	setMainLed({ r:0, g:255, b:0 });
-	*/
 
+	await roll(0,40,2)
+	await roll(-50,30,2)
+	await speak('music note number 3');
+	setMainLed({ r:255, g:0, b:255 });
+	await roll(0,40,3)
+	await scrollMatrixText('End', { r: 255, g: 245, b: 0 }, 15, false);
+	
 }
