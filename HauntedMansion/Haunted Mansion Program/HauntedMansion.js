@@ -26,11 +26,5 @@ async function startProgram() {
 	await roll(140,40,2)
 	stopRoll();
 	setHeading(90)
-	
-	/*
-	await roll(125,45,1)
-	await roll(90,40,1)
-	setMainLed({ r:0, g:255, b:0 });
-	*/
 
 }
